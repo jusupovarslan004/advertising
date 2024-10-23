@@ -12,6 +12,7 @@ body {
     color: #333;
 }
 
+
 /* Главный экран (Hero Section) */
 .hero {
     background: url('../images/back.jpg') center/cover no-repeat;
@@ -28,12 +29,15 @@ body {
     padding: 20px;
     border-radius: 8px;
 }
+.hero-content h1{
+    color: white;
+}
 .main_images{
     width: 400px;
     border-radius: 15px;
 }
 button {
-    background-color: pink;
+    background-color: #0056b3;
     color: white;
     border: none;
     padding: 12px 24px;
