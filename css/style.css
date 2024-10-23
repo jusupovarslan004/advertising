@@ -14,7 +14,7 @@ body {
 
 /* Главный экран (Hero Section) */
 .hero {
-    background: url('./images/back.jpg') center/cover no-repeat;
+    background: url('../images/back.jpg') center/cover no-repeat;
     min-height: 100vh; /* Устанавливаем минимальную высоту 100% от высоты экрана */
     display: flex;
     align-items: center;
@@ -84,6 +84,9 @@ section {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
+}
+.vk_icons{
+    width: 20px;
 }
 
 .contact-btn:hover {

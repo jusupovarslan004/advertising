@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skytex - Швейное производство</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
 </head>
 <body>
 <!-- Главный экран -->
@@ -27,16 +30,60 @@
 <!-- Продукция -->
 <section id="products" class="hidden">
     <h2>Наша продукция</h2>
-    <div class="product-gallery">
-        <div class="product-item">
-            <img src="images/product1.jpg" alt="Продукт 1">
-            <p>Стильное платье — 2500 сом</p>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+        <div class="uk-slider-items uk-grid">
+            <div class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="images/productsImages/IMG_7039.JPG" width="900" height="600" loading="lazy" alt="Слайд 1">
+                    <div class="uk-position-center uk-panel">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="images/productsImages/IMG_7040.JPG" width="900" height="600" loading="lazy" alt="Слайд 2">
+                    <div class="uk-position-center uk-panel">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="images/productsImages/IMG_7041.JPG" width="900" height="600" loading="lazy" alt="Слайд 3">
+                    <div class="uk-position-center uk-panel">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="images/productsImages/IMG_7042.JPG" width="900" height="600" loading="lazy" alt="Слайд 4">
+                    <div class="uk-position-center uk-panel">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="images/productsImages/IMG_7043.JPG" width="900" height="600" loading="lazy" alt="Слайд 5">
+                    <div class="uk-position-center uk-panel">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="images/productsImages/IMG_7044.JPG" width="900" height="600" loading="lazy" alt="Слайд 5">
+                    <div class="uk-position-center uk-panel">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="images/productsImages/IMG_7045.JPG" width="900" height="600" loading="lazy" alt="Слайд 5">
+                    <div class="uk-position-center uk-panel">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="product-item">
-            <img src="images/product2.jpg" alt="Продукт 2">
-            <p>Кожаная куртка — 3500 сом</p>
-        </div>
-        <!-- Добавьте больше товаров -->
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
     </div>
 </section>
 
@@ -55,11 +102,13 @@
 <section id="contacts" class="hidden">
     <h2>Свяжитесь с нами</h2>
     <div class="contact-buttons">
-        <a href="https://www.instagram.com/Skytex.kg" target="_blank" class="contact-btn">Instagram</a>
-        <a href="https://t.me/SkyTexProduct" target="_blank" class="contact-btn">Telegram (SkyTex)</a>
-        <a href="https://t.me/KurzhunbaevAkai" target="_blank" class="contact-btn">Telegram (Контакт)</a>
-        <a href="https://vk.com/SkyTexProduct" target="_blank" class="contact-btn">ВКонтакте</a>
-        <a href="https://wa.me/996500117733" target="_blank" class="contact-btn">WhatsApp</a>
+        <a uk-icon="icon: instagram" href="https://www.instagram.com/Skytex.kg" target="_blank" class="contact-btn">Instagram</a>
+        <a uk-icon="icon: telegram" href="https://t.me/SkyTexProduct" target="_blank" class="contact-btn">Telegram (SkyTex)</a>
+        <a uk-icon="icon: telegram" href="https://t.me/KurzhunbaevAkai" target="_blank" class="contact-btn">Telegram (Контакт)</a>
+        <a uk-icon="icon: vk" href="https://vk.com/SkyTexProduct" target="_blank" class="contact-btn">ВКонтакте
+            <img class="vk_icons" src="images/icons/vk.svg" alt="">
+        </a>
+        <a uk-icon="icon: whatsapp" href="https://wa.me/996500117733" target="_blank" class="contact-btn">WhatsApp</a>
     </div>
 
 </section>
@@ -69,6 +118,7 @@
     <p>&copy; 2024 Skytex. Все права защищены.</p>
 </footer>
 
-<script src="main.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
