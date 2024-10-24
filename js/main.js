@@ -1,23 +1,22 @@
-document.getElementById('learnMoreBtn').addEventListener('click', function () {
-    // Скрыть блок hero
-    document.querySelector('.hero').style.display = 'none';
-
-    // Показать остальные секции
-    document.getElementById('about').classList.remove('hidden');
-    document.getElementById('images').classList.remove('hidden');
-    document.getElementById('products').classList.remove('hidden');
-    document.getElementById('reviews').classList.remove('hidden');
-    document.getElementById('contacts').classList.remove('hidden');
-
-    // Показать футер
-    document.querySelector('footer').classList.remove('hidden');
-
-    // Включить скролл
-    document.body.style.overflow = 'auto';
-
-    // Прокрутить на самый верх страницы
+document.addEventListener('DOMContentLoaded', function () {
+    document.body.style.overflow = 'hidden';
     window.scrollTo(0, 0);
 });
+
+document.getElementById('learnMoreBtn').addEventListener('click', function () {
+    document.querySelector('.hero').style.display = 'none';
+    document.getElementById('about').classList.remove('hidden');
+    document.getElementById('slider').classList.remove('hidden');
+    document.getElementById('images').classList.remove('hidden');
+    document.getElementById('reviews').classList.remove('hidden');
+    document.getElementById('contacts').classList.remove('hidden');
+    document.querySelector('footer').classList.remove('hidden');
+
+    // Включение скролла
+    document.body.style.overflow = 'auto';
+    window.scrollTo(0, 0);
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     // Отключаем скролл при загрузке страницы

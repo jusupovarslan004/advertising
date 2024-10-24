@@ -22,13 +22,10 @@ body {
     text-align: left;
 
 }
-#about h2{
+.slider h2{
+    color: #333030;
+}
 
-    color: #333030;
-}
-#products h2{
-    color: #333030;
-}
 
 
 /* Главный экран (Hero Section) */
@@ -106,6 +103,16 @@ section {
 .contact-buttons {
     display: flex;
     justify-content: center;
+    gap: 20px;
+}
+.icons_btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.invid{
     gap: 20px;
 }
 
@@ -201,5 +208,27 @@ footer {
 }
 
 
+
+
+
+/* Скрываем слайдер для телефонов на больших экранах */
+.desktop-slider {
+    display: block;
+}
+
+.mobile-slider {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* На телефонах показываем мобильный слайдер, скрываем слайдер для мониторов */
+    .desktop-slider {
+        display: none;
+    }
+
+    .mobile-slider {
+        display: block;
+    }
+}
 
 
