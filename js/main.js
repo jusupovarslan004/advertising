@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.25});
 
     sections.forEach(section => {
         observer.observe(section);
