@@ -21,25 +21,29 @@
 </header>
 
 <div class="uk-container">
-
-
+    <section id="images" class="hidden section-to-animate">
+        <img class="main_images" src="images/title/IMG_6889.JPG"  alt="Image">
+    </section>
+</div>
 
     <!-- О нас -->
-    <section id="about" class="hidden section-to-animate">
-            <img class="main_images" src="images/title/IMG_6889.JPG"  alt="Image">
-
-        <h2 class="uk-text-danger">Швейное производство в Кыргызстане! 🌟</h2>
-        <p class="uk-text-primary">Мы специализируемся на создании стильной женской одежды любого формата – от классики до актуальных трендов. Заказывайте от 300 штук и получайте уникальные модели, которые подчеркнут индивидуальность вашего бренда!</p>
-        <p class="uk-text-primary">Мы работаем по договору, гарантируя высокое качество и соблюдение сроков. С нами вы сможете выделиться на рынке и предложить своим клиентам именно то, что они ищут.</p>
-        <p class="uk-text-primary">📞 Свяжитесь с нами уже сегодня и начните свой путь к успеху в модной индустрии!</p>
-    </section>
-
+<div class="about_wrapper">
+    <div class="uk-container">
+           <section id="about" class="hidden section-to-animate">
+               <h2 >Швейное производство в Кыргызстане! 🌟</h2>
+               <p >Мы специализируемся на создании стильной женской одежды любого формата – от классики до актуальных трендов. Заказывайте от 300 штук и получайте уникальные модели, которые подчеркнут индивидуальность вашего бренда!</p>
+               <p >Мы работаем по договору, гарантируя высокое качество и соблюдение сроков. С нами вы сможете выделиться на рынке и предложить своим клиентам именно то, что они ищут.</p>
+               <p >📞 Свяжитесь с нами уже сегодня и начните свой путь к успеху в модной индустрии!</p>
+           </section>
+       </div>
+</div>
+<div class="uk-container">
     <!-- Продукция -->
     <section id="products" class="hidden section-to-animate">
-        <h2 class="uk-text-danger">Наша продукция</h2>
+        <h2 >Наша продукция</h2>
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
 
-            <div class="uk-slider-items uk-grid">
+            <div class="uk-slider-items uk-grid ">
                 <div class="uk-width-3-4">
                     <div class="uk-panel">
                         <img src="images/productsImages/IMG_7039.JPG" width="400" height="200" alt="">
@@ -85,35 +89,34 @@
                         </div>
                     </div>
                 </div><div class="uk-width-3-4">
-                    <div class="uk-panel">
-                        <img src="images/productsImages/IMG_7044.JPG" width="400" height="200" alt="">
-                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                            <h3 class="uk-margin-remove">Надежность и долговечность</h3>
-                            <p class="uk-margin-remove">Наши вещи прослужат вам долго.</p>
-                        </div>
+                <div class="uk-panel">
+                    <img src="images/productsImages/IMG_7044.JPG" width="400" height="200" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">Надежность и долговечность</h3>
+                        <p class="uk-margin-remove">Наши вещи прослужат вам долго.</p>
                     </div>
-                </div><div class="uk-width-3-4">
-                    <div class="uk-panel">
-                        <img src="images/productsImages/IMG_7045.JPG" width="400" height="200" alt="">
-                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                            <h3 class="uk-margin-remove">Экологичность</h3>
-                            <p class="uk-margin-remove">Мы заботимся об окружающей среде.</p>
-                        </div>
+                </div>
+            </div><div class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="images/productsImages/IMG_7045.JPG" width="400" height="200" alt="">
+                    <div  class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center  uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">Экологичность</h3>
+                        <p class="uk-margin-remove">Мы заботимся об окружающей среде.</p>
                     </div>
                 </div>
             </div>
+            </div>
 
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
 
-        </div>
 
     </section>
-
+</div>
+<div class="uk-container">
     <!-- Отзывы -->
+
     <section id="reviews" class="hidden section-to-animate">
-            <h2 >Отзывы клиентов</h2>
-            <span uk-icon="user"></span>
+        <h2 >Отзывы клиентов</h2>
+        <span uk-icon="user"></span>
 
         <div class="review">
             <p>"Отличное качество и стильный дизайн. Очень довольна покупкой!" - Алия</p>
@@ -123,35 +126,42 @@
         </div>
     </section>
 
+</div>
+<div class="uk-container">
     <!-- Контакты -->
     <section id="contacts" class="hidden section-to-animate"">
         <h2 class="uk-text-danger">Свяжитесь с нами</h2>
         <div class="contact-buttons">
-            <button class="uk-button uk-button-danger">
-                <a uk-icon="icon: instagram" href="https://www.instagram.com/Skytex.kg" target="_blank" class="contact-btn">Instagram</a>
-            </button>
-            <button class="uk-button uk-button-danger">
-                <a uk-icon="icon: telegram" href="https://t.me/SkyTexProduct" target="_blank" class="contact-btn">Telegram (SkyTex)</a>
-            </button>
-            <button class="uk-button uk-button-danger">
-                <a uk-icon="icon: telegram" href="https://t.me/KurzhunbaevAkai" target="_blank" class="contact-btn">Telegram (Контакт)</a>
-            </button>
-            <button class="uk-button uk-button-danger">
-                <a uk-icon="icon: vk" href="https://vk.com/SkyTexProduct" target="_blank" class="contact-btn">ВКонтакте
-                    <img class="vk_icons" src="images/icons/vk.svg"  uk-svg>
-                </a>
-            </button>
-            <button class="uk-button uk-button-danger">
-                <a uk-icon="icon: whatsapp" href="https://wa.me/996500117733" target="_blank" class="contact-btn">WhatsApp</a>
-            </button>
+        <button class="uk-button uk-button-danger">
+            <a uk-icon="icon: instagram" href="https://www.instagram.com/Skytex.kg" target="_blank" class="contact-btn">Instagram</a>
+        </button>
+        <button class="uk-button uk-button-danger">
+            <a uk-icon="icon: telegram" href="https://t.me/SkyTexProduct" target="_blank" class="contact-btn">Telegram (SkyTex)</a>
+        </button>
+        <button class="uk-button uk-button-danger">
+            <a uk-icon="icon: telegram" href="https://t.me/KurzhunbaevAkai" target="_blank" class="contact-btn">Telegram (Контакт)</a>
+        </button>
+        <button class="uk-button uk-button-danger">
+            <a uk-icon="icon: vk" href="https://vk.com/SkyTexProduct" target="_blank" class="contact-btn">ВКонтакте
+                <img class="vk_icons" src="images/icons/vk.svg"  uk-svg>
+            </a>
+        </button>
+        <button class="uk-button uk-button-danger">
+            <a uk-icon="icon: whatsapp" href="https://wa.me/996500117733" target="_blank" class="contact-btn">WhatsApp</a>
+        </button>
 
-        </div>
+    </div>
 
     </section>
-
-
-
 </div>
+
+
+
+
+
+
+
+
 <!-- Футер -->
 <footer class="hidden">
     <p>&copy; 2024 Skytex. Все права защищены.</p>

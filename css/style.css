@@ -11,6 +11,23 @@ body {
     line-height: 1.6;
     color: #333;
 }
+.about_wrapper{
+    background-color: #e5b773;
+    padding: 30px;
+}
+#about{
+    border-radius: 20px;
+    color: #333030;
+    padding: 0;
+    text-align: justify;
+}
+#about h2{
+
+    color: #333030;
+}
+#products h2{
+    color: #333030;
+}
 
 
 /* Главный экран (Hero Section) */
