@@ -41,31 +41,32 @@ document.addEventListener('DOMContentLoaded', function () {
     window.scrollTo(0, 0);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Отключаем скролл при загрузке страницы
+    document.body.style.overflow = 'hidden';
 
+    const sections = document.querySelectorAll('.section-to-animate');
+    const appearElements = document.querySelectorAll('.appear-from-right');
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.55 });
 
-// Функция для проверки, находится ли элемент в зоне видимости
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-// Обработчик прокрутки
-function onScroll() {
-    const elements = document.querySelectorAll('.appear-from-right');
-    elements.forEach((element) => {
-        if (isInViewport(element)) {
-            element.classList.add('visible');
-        }
+    sections.forEach(section => {
+        observer.observe(section);
     });
-}
 
-// Добавляем обработчик событий прокрутки
-window.addEventListener('scroll', onScroll);
+    appearElements.forEach((element, index) => {
+        observer.observe(element);
+        element.style.transitionDelay = `${index * 0.2}s`; // Задержка появления элементов
+    });
 
-// Активируем анимацию для элементов, которые уже находятся в зоне видимости при загрузке страницы
-onScroll();
+    // Прокрутить страницу на самый верх при загрузке
+    window.scrollTo(0, 0);
+});
+
+
