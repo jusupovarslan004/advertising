@@ -9,3 +9,19 @@ document.getElementById('learnMoreBtn').addEventListener('click', function () {
     // Показать футер
     document.querySelector('footer').classList.remove('hidden');
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.section-to-animate');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});

@@ -25,7 +25,7 @@
 
 
     <!-- О нас -->
-    <section id="about" class="hidden">
+    <section id="about" class="hidden section-to-animate">
             <img class="main_images" src="images/title/IMG_6889.JPG"  alt="Image">
 
         <h2 class="uk-text-danger">Швейное производство в Кыргызстане! 🌟</h2>
@@ -35,67 +35,83 @@
     </section>
 
     <!-- Продукция -->
-    <section id="products" class="hidden">
+    <section id="products" class="hidden section-to-animate">
         <h2 class="uk-text-danger">Наша продукция</h2>
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+
             <div class="uk-slider-items uk-grid">
                 <div class="uk-width-3-4">
                     <div class="uk-panel">
-                        <img src="images/productsImages/IMG_7039.JPG" width="400" height="200" loading="lazy" alt="Слайд 1">
-                        <div class="uk-position-center uk-panel">
+                        <img src="images/productsImages/IMG_7039.JPG" width="400" height="200" alt="">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h3 class="uk-margin-remove">Высокое качество</h3>
+                            <p class="uk-margin-remove">Наша одежда создана из лучших материалов.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-width-3-4">
                     <div class="uk-panel">
-                        <img src="images/productsImages/IMG_7040.JPG" width="400" height="200" loading="lazy" alt="Слайд 2">
-                        <div class="uk-position-center uk-panel">
+                        <img src="images/productsImages/IMG_7040.JPG" width="400" height="200" alt="">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h3 class="uk-margin-remove">Современный дизайн</h3>
+                            <p class="uk-margin-remove">Трендовые модели на любой вкус.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-width-3-4">
                     <div class="uk-panel">
-                        <img src="images/productsImages/IMG_7041.JPG" width="400" height="200" loading="lazy" alt="Слайд 3">
-                        <div class="uk-position-center uk-panel">
+                        <img src="images/productsImages/IMG_7041.JPG" width="400" height="200" alt="">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h3 class="uk-margin-remove">Удобство и стиль</h3>
+                            <p class="uk-margin-remove">Идеально подходит для повседневной носки.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-width-3-4">
                     <div class="uk-panel">
-                        <img src="images/productsImages/IMG_7042.JPG" width="400" height="200" loading="lazy" alt="Слайд 4">
-                        <div class="uk-position-center uk-panel">
+                        <img src="images/productsImages/IMG_7042.JPG" width="400" height="200" alt="">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h3 class="uk-margin-remove">Доступные цены</h3>
+                            <p class="uk-margin-remove">Качество и доступная цена — это про нас.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-width-3-4">
                     <div class="uk-panel">
-                        <img src="images/productsImages/IMG_7043.JPG" width="400" height="200" loading="lazy" alt="Слайд 5">
-                        <div class="uk-position-center uk-panel">
+                        <img src="images/productsImages/IMG_7043.JPG" width="400" height="200" alt="">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h3 class="uk-margin-remove">Широкий ассортимент</h3>
+                            <p class="uk-margin-remove">Большой выбор моделей для каждого.</p>
                         </div>
                     </div>
-                </div>
-                <div class="uk-width-3-4">
+                </div><div class="uk-width-3-4">
                     <div class="uk-panel">
-                        <img src="images/productsImages/IMG_7044.JPG" width="400" height="200" loading="lazy" alt="Слайд 5">
-                        <div class="uk-position-center uk-panel">
+                        <img src="images/productsImages/IMG_7044.JPG" width="400" height="200" alt="">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h3 class="uk-margin-remove">Надежность и долговечность</h3>
+                            <p class="uk-margin-remove">Наши вещи прослужат вам долго.</p>
                         </div>
                     </div>
-                </div>
-                <div class="uk-width-3-4">
+                </div><div class="uk-width-3-4">
                     <div class="uk-panel">
-                        <img src="images/productsImages/IMG_7045.JPG" width="400" height="200" loading="lazy" alt="Слайд 5">
-                        <div class="uk-position-center uk-panel">
+                        <img src="images/productsImages/IMG_7045.JPG" width="400" height="200" alt="">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h3 class="uk-margin-remove">Экологичность</h3>
+                            <p class="uk-margin-remove">Мы заботимся об окружающей среде.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
         </div>
+
     </section>
 
     <!-- Отзывы -->
-    <section id="reviews" class="hidden">
+    <section id="reviews" class="hidden section-to-animate">
             <h2 >Отзывы клиентов</h2>
             <span uk-icon="user"></span>
 
@@ -108,7 +124,7 @@
     </section>
 
     <!-- Контакты -->
-    <section id="contacts" class="hidden">
+    <section id="contacts" class="hidden section-to-animate"">
         <h2 class="uk-text-danger">Свяжитесь с нами</h2>
         <div class="contact-buttons">
             <button class="uk-button uk-button-danger">
