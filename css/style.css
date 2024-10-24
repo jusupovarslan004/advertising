@@ -15,6 +15,15 @@ body {
     background-color: #dcc583;
 
 }
+#reviews{
+    padding: 0;
+    margin-bottom: 50px;
+}
+#contacts{
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
 #about{
     border-radius: 20px;
     color: #333030;
