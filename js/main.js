@@ -1,18 +1,29 @@
 document.getElementById('learnMoreBtn').addEventListener('click', function () {
     // Скрыть блок hero
     document.querySelector('.hero').style.display = 'none';
+
     // Показать остальные секции
     document.getElementById('about').classList.remove('hidden');
     document.getElementById('images').classList.remove('hidden');
     document.getElementById('products').classList.remove('hidden');
     document.getElementById('reviews').classList.remove('hidden');
     document.getElementById('contacts').classList.remove('hidden');
+
     // Показать футер
     document.querySelector('footer').classList.remove('hidden');
-});
-document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('.section-to-animate');
 
+    // Включить скролл
+    document.body.style.overflow = 'auto';
+
+    // Прокрутить на самый верх страницы
+    window.scrollTo(0, 0);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Отключаем скролл при загрузке страницы
+    document.body.style.overflow = 'hidden';
+
+    const sections = document.querySelectorAll('.section-to-animate');
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -20,9 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.25});
+    }, { threshold: 0.25 });
 
     sections.forEach(section => {
         observer.observe(section);
     });
+
+    // Прокрутить страницу на самый верх при загрузке
+    window.scrollTo(0, 0);
 });

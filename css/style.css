@@ -12,14 +12,15 @@ body {
     color: #333;
 }
 .about_wrapper{
-    background-color: #e5b773;
-    padding: 30px;
+    background-color: #dcc583;
+
 }
 #about{
     border-radius: 20px;
     color: #333030;
-    padding: 0;
-    text-align: justify;
+    padding:30px 0;
+    text-align: left;
+
 }
 #about h2{
 
@@ -32,13 +33,15 @@ body {
 
 /* Главный экран (Hero Section) */
 .hero {
-    background: url('../images/back.jpg') center/cover no-repeat;
+    background: url('../images/back.jpg') center no-repeat;
+    background-size:cover;
     min-height: 100vh; /* Устанавливаем минимальную высоту 100% от высоты экрана */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+
 }
 
 .hero-content {
@@ -54,7 +57,8 @@ body {
     border-radius: 15px;
 }
 button {
-    background-color: #0056b3;
+
+    background-color: #333;
     color: white;
     border: none;
     padding: 12px 24px;
