@@ -69,7 +69,8 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #dcc583;
+    color: #333;
 }
 
 /* Скрытые секции */
@@ -108,7 +109,6 @@ section {
 }
 
 .contact-btn {
-    background-color: #007bff;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -117,7 +117,9 @@ section {
 .vk_icons{
     width: 20px;
 }
-
+.contact-btn a{
+    color: #333;
+}
 /* Изначальное состояние секций до появления */
 .section-to-animate {
     opacity: 0;
