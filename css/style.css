@@ -78,7 +78,9 @@ button:hover {
     display: none;
 }
 
-
+#reviews{
+    text-align: left;
+}
 /* Секции: О нас, Продукция, Отзывы, Контакты */
 section {
     padding: 60px 20px;
