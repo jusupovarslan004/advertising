@@ -40,3 +40,32 @@ document.addEventListener('DOMContentLoaded', function () {
     // Прокрутить страницу на самый верх при загрузке
     window.scrollTo(0, 0);
 });
+
+
+
+// Функция для проверки, находится ли элемент в зоне видимости
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Обработчик прокрутки
+function onScroll() {
+    const elements = document.querySelectorAll('.appear-from-right');
+    elements.forEach((element) => {
+        if (isInViewport(element)) {
+            element.classList.add('visible');
+        }
+    });
+}
+
+// Добавляем обработчик событий прокрутки
+window.addEventListener('scroll', onScroll);
+
+// Активируем анимацию для элементов, которые уже находятся в зоне видимости при загрузке страницы
+onScroll();

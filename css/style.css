@@ -105,7 +105,6 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
 }
 
 .contact-btn {
@@ -181,5 +180,37 @@ footer {
 
     .contact-buttons {
         flex-direction: column;
+        gap: 0;
     }
 }
+
+
+
+
+/* Добавьте стили для анимации появления текста справа */
+.appear-from-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Стили для видимого состояния анимации */
+.appear-from-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Добавьте задержку для каждого абзаца, чтобы они появлялись по очереди */
+#about p:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+#about p:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+#about p:nth-child(4) {
+    transition-delay: 0.6s;
+}
+
+
