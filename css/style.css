@@ -17,22 +17,25 @@ body {
 }
 #slider{
     padding: 0;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 #reviews{
     padding: 0;
-    margin-bottom: 40px;
+    margin: 30px auto;
+
 }
 #contacts{
     padding: 0;
 
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 #about{
     border-radius: 20px;
     color: #333030;
-    padding:30px 0;
+    padding:0;
     text-align: left;
+    margin: 30px auto;
+
 
 }
 .slider h2{
