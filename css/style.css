@@ -227,12 +227,13 @@ footer {
 .card_container{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 .card{
     max-width: 400px;
 }
 .card_images_revies{
-    width: 350px;
+    max-width: 400px;
     height: 300px;
 }
 
@@ -241,20 +242,42 @@ footer {
 .desktop-slider {
     display: block;
 }
+.delete-card{
+    display: block;
+}
 
 .mobile-slider {
     display: none;
 }
-
+.modal_images{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
 @media (max-width: 768px) {
     /* На телефонах показываем мобильный слайдер, скрываем слайдер для мониторов */
     .desktop-slider {
         display: none;
     }
-
+    .delete-card{
+        display: none;
+    }
     .mobile-slider {
         display: block;
     }
+
+    .card{
+        width: 50%;
+
+    }
+    .card_images_revies{
+        width: 100%;
+        height: 130px;
+    }
+
+
+
 }
 
 
