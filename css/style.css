@@ -224,7 +224,17 @@ footer {
 }
 
 
-
+.card_container{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    max-width: 400px;
+}
+.card_images_revies{
+    width: 350px;
+    height: 300px;
+}
 
 
 /* Скрываем слайдер для телефонов на больших экранах */
