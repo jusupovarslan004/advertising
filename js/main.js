@@ -68,4 +68,17 @@ document.addEventListener('DOMContentLoaded', function () {
     window.scrollTo(0, 0);
 });
 
+document.getElementById('conditionsBtn').addEventListener('click', function() {
+    let content = document.getElementById('conditionsContent');
+    if (content.classList.contains('uk-hidden')) {
+        content.classList.remove('uk-hidden');
+    } else {
+        content.classList.add('uk-hidden');
+    }
+});
+document.getElementById('close_uslovia').onclick = () => {
+    let content = document.getElementById('conditionsContent');
+    content.classList.add('uk-hidden');
+
+}
 

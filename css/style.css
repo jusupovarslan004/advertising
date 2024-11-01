@@ -281,9 +281,10 @@ footer {
         width: 100%;
         height: 130px;
     }
+}
 
-
-
+.uk-hidden {
+    display: none;
 }
 
 
